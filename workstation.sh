@@ -50,7 +50,7 @@ metadata:
     region: us-east-1
 managedNodeGroups:
   - name: roboshop-dev
-    instanceTypes: ["m5.large", "c3.large","c4.large","c5.large"]
+    instanceTypes: ["t3.micro,t3.small"]
     desiredCapacity: 3 #  by default this value is 3
     spot: true
 EOC
