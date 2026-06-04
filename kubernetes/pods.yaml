@@ -12,6 +12,7 @@ spec:
    image: nginx
    ports:
    - containerPort: 80
- - name: httpd
-   image: httpd
+ - name: busybox
+   image: busybox
+   command: ["sleep", "3600"]
    
