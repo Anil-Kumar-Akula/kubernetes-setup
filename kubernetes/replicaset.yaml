@@ -11,12 +11,12 @@ spec:
     matchLabels:
      purpose: rs
      project: roboshop
-template:
-  metadata:
-    labels:
-       purpose: rs
-       project: roboshop 
-  spec:
-    containers:
-    - name: nginx
-      image: nginx
+  template:
+    metadata:
+      labels:
+         purpose: rs
+         project: roboshop 
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
