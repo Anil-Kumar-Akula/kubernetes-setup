@@ -5,7 +5,7 @@ metadata:
   lables:
    type: for-resources-pod
 spec:
-  container:
+  containers:
   - name: resources-pod
     image: nginx
     resources:
