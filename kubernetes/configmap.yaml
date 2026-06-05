@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configs
+data:
+  name: anil_kumar
+  designation: Assocaite_software_engineer
+  
