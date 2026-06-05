@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metdata:
+  name: environment
+  labels:
+    name: anil-kumar
+spec:
+  container:
+  - name: environemnt
+    image: nginx
+    env:
+    - name: anilkumar
+      course: kubernetes
+      
