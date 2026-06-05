@@ -3,10 +3,12 @@ kind: Service
 metadata:
   name: pod-service
 spec:
+ type: NodePort
  selector:
    project: roboshop
    components: frontend
    environment: dev
+   purpose : node-port
  ports:
  - protocol: TCP
    port: 80
