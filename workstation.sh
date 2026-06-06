@@ -51,7 +51,7 @@ metadata:
 managedNodeGroups:
   - name: roboshop-dev
     instanceTypes: ["m5.large","m5.large"]
-    desiredCapacity: 3 #  by default this value is 3
+    desiredCapacity: 2 #  by default this value is 3
     spot: true
 EOC
 
