@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: empty-volume
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    volumeMounts:
+    - mountPath: /mnt/nginx-log
+      name: nginx-logs
+      readOnly: true
+
+  - name: almalinux
+    image: almalinux
+    command: ["/bin/sh", "-c", "sleep 3600"]
+    volumeMounts:
+    - mountPath: /mnt/nginx-log
+      name: nginx-logs
+      readOnly: true
+
+  volumes:
+  - name: nginx-logs
+    emptyDir:
+      sizeLimit: 100Mi
